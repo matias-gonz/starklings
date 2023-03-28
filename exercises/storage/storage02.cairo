@@ -2,12 +2,22 @@
 
 # Starknet storage can be though about as a hashmap
 
-# I AM NOT DONE
-
 struct Id:
     member age : felt
     member height : felt
     member married : felt
+end
+
+@storage_var
+func wallet(address: felt) -> (balance: felt):
+end
+
+@storage_var
+func height_map(x: felt, y: felt) -> (z: felt):
+end
+
+@storage_var
+func id(address: felt) -> (id: Id):
 end
 
 # TODO
