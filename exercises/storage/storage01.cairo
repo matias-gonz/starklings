@@ -11,6 +11,10 @@
 
 from starkware.cairo.common.cairo_builtins import HashBuiltin
 
+@storage_var
+func bool() -> (value: felt):
+end
+
 @external
 func test_store_bool{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}():
     let (x) = bool.read()
